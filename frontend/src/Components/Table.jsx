@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import toast from "react-hot-toast";
 
 const Table = () => {
   const [users, setUsers] = useState([]);
