@@ -39,7 +39,7 @@ class Users extends ResourceController
     public function update($id = null)
     {
         $model = new User();
-        $data = $this->request->getRawInput();
+        $data = $this->request->getJSON(true);
 
         // Log the received data for debugging
         log_message('info', 'Update Data: ' . print_r($data, true));
